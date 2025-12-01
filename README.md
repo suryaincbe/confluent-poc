@@ -24,7 +24,7 @@
 
 # 4. confluent-cluster.tf
    1. Creates a single zone cluster in the Confluent Cloud.
-   2. env variable can be modified in tfvars depending upon the region.
+   2. env variable can be modified in tfvars depending upon the environment.
    3. Cluster name will depend on the env variable.
 
 # 5. confluent-kafka-topics.tf
