@@ -4,9 +4,9 @@
 
 # 1. cloud-network.tf
    1. Used as module. Module present in terraform/modules/cloud-network folder.
-   2. VPC created in azure cloud by default.
+   2. VPC and Subnet created in azure cloud by default.
    3. Customizable variables in this file are vnet_location, resource_group_name, address_space and subnet_prefixes
-   4. vnet location should be as your confluent cloud location.
+   4. vnet location should be same as your confluent cloud location.
    5. exported output varibles are subnet_id and vpc_id.
 
 # 2. cloud-endpoints.tf
