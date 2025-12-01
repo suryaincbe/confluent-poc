@@ -43,6 +43,9 @@
    2. Backend block has been configured to store the terraform state files in a bucket for versioning.
    3. Subscription ID of the Azure project can be passed in this file as var.subscription variable.
    4. Confluent cloud keys can be passed as hardcoded (not safe), environment variable, passed from azure secret manager.
+
+# 8. env-config/test.tfvars
+    1. tfvars file which can be modified as per the region, subscription id, vnet location, vpc ip address.
    
 
 ## To Create the Resources
