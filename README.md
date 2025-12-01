@@ -45,7 +45,7 @@
    4. Confluent cloud keys can be passed as hardcoded (not safe), environment variable, passed from azure secret manager.
 
 # 8. env-config/test.tfvars
-    1. tfvars file which can be modified as per the region, subscription id, vnet location, vpc ip address.
+   1. tfvars file which can be modified as per the region, subscription id, vnet location, vpc ip address.
    
 
 ## To Create the Resources
