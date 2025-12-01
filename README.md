@@ -7,7 +7,7 @@
    2. VPC and Subnet created in azure cloud by default.
    3. Customizable variables in this file are vnet_location, resource_group_name, address_space and subnet_prefixes
    4. vnet location should be same as your confluent cloud location.
-   5. exported output varibles are subnet_id and vpc_id.
+   5. exported output variables are subnet_id and vpc_id.
 
 # 2. cloud-endpoints.tf
    1. Creates private DNS zone for the newly created Confluent Cloud.
