@@ -3,7 +3,7 @@
 ## Terraform Files to Create the Required Resources
 
 # 1. cloud-network.tf
-   1. Used as module. Module present in modules/cloud-network folder.
+   1. Used as module. Module present in terraform/modules/cloud-network folder.
    2. VPC created in azure cloud by default.
    3. Customizable variables in this file are vnet_location, resource_group_name, address_space and subnet_prefixes
    4. vnet location should be as your confluent cloud location.
@@ -44,7 +44,7 @@
    3. Subscription ID of the Azure project can be passed in this file as var.subscription variable.
    4. Confluent cloud keys can be passed as hardcoded (not safe), environment variable, passed from azure secret manager.
 
-# 8. env-config/test.tfvars
+# 8. env-config/<>.tfvars
    1. tfvars file which can be modified as per the region, subscription id, vnet location, vpc ip address.
    
 
