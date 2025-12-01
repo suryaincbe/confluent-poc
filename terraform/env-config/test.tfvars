@@ -1,0 +1,8 @@
+cloud               = "AZURE"
+region              = ""
+env                 = "test"
+subscription_id     = ""
+resource_group_name = ""
+vnet_location       = ""
+address_space       = ""
+subnet_prefixes     = ""
