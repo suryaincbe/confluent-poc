@@ -8,7 +8,7 @@ variable "connection_types" {
 
 variable "dns_config_resolution" {
   type = string
-  description = "Region of Confluent Cluster"
+  description = "Type of Network DNS Resolution"
   default = "PRIVATE"
 }
 
@@ -49,17 +49,6 @@ variable "address_space" {
   type        = list(string)
   description = "The address space that is used by the virtual network."
   default     = ["0.0.0.0/0"]
-}
-
-variable "dns_servers" {
-  description = "The DNS servers to be used with vNet."
-  type        = list(string)
-  default     = []
-}
-
-variable "subnet_name" {
-  description = "Name of the subnet to create"
-  type        = string
 }
 
 variable "subnet_prefixes" {

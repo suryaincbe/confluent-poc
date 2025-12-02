@@ -1,5 +1,22 @@
 # Terraform to Create Azure VPC/Subnets, Confluent Kafka Cluster, Topics, ACL and Private Endpoints
 
+## Variables Used in this Terraform
+
+| Variables             | Default Value | Tfvars Value              | Description                                                                      |
+|-----------------------|---------------|---------------------------|----------------------------------------------------------------------------------|
+| connection_types      | PRIVATELINK   | Can be modified in tfvars | Connection type for Confluent Cloud                                              |
+| dns_config_resolution | PRIVATE       | Can be modified in tfvars | DNS Resolution for Confluent Cloud                                               |
+| env                   |               | Provide value in tfvars   | Environment for Confluent/Azure Cloud (test,prod)                                |
+| cloud                 |               | Provide value in tfvars   | Value for Cloud Provider (AWS/GCP/Azure)                                         |
+| subscription_id       |               | Provide value in tfvars   | Subscription ID of Azure Account                                                 |
+| region                |               | Provide value in tfvars   | Region of Confluent Cloud                                                        |
+| resource_group_name   |               | Provide value in tfvars   | Resource Group Name in Azure Cloud                                               |
+| vnet_location         |               | Provide value in tfvars   | VPC Location in Cloud Provider (should be same as the region of confluent cloud) |
+| address_space         |               | Provide value in tfvars   | CIDR Address for Vnet in Cloud Provider                                          |
+| subnet_prefixes       |               | Provide value in tfvars   | CIDR Address for the Subnet in Cloud Provider                                    |
+
+
+
 ## Terraform Files to Create the Required Resources
 
 # 1. cloud-network.tf
